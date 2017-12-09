@@ -1,43 +1,22 @@
-<html>
-  <header>
-    <title>Bet Tracker</title>
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css" rel="stylesheet" type="text/css">
+<% include ./partials/header %>
 
-    <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
-  </header>
-  
-  <body>
+<div id="landing" class="ui fluid container">
+  <div id="splash-text" class="ui center aligned text container">
+    <h1 class="ui header">BetTracker</h1>
     
-    <div id="navbar" class="ui secondary pointing menu inverted">
-      <div class="ui container">
-        <a class="large item active" href="/"><i class="trophy icon"></i>BetTracker</a>
-        <a class="item" href="/">Profile</a>
-        <a class="item" href="/">New Bet</a>
-        <div class="right menu">
-          <a class="item" href="/">Sign Up</a>
-          <a class="item" href="/">Login</a>
+    <h3 class="ui header">Let's make it a sure thing.</h3>
+    
+    <div class="massive ui animated button" tabindex="0">
+      <a href="/signup">
+        <div class="visible content">Sign Up</div>
+        <div class="hidden content">
+          <i class="right arrow icon"></i>
         </div>
-      </div>
+      </a>
     </div>
-    
-    <div id="landing" class="ui fluid container">
-      <div id="splash-text" class="ui center aligned text container">
-        <h1 class="ui header">BetTracker</h1>
-        
-        <h3 class="ui header">Let's make it a sure thing.</h3>
-        
-        <div id="signup-btn" class="massive ui animated button" tabindex="0">
-          <div class="visible content">Sign Up</div>
-          <div class="hidden content">
-            <i class="right arrow icon"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!--<p>BetTracker is a new way to keep track of your successes while -->
-    <!--recognizing trends and improving your performance over time.</p>-->
-    
-  </body>
-</html>
+  </div>
+</div>
+<!--<p>BetTracker is a new way to keep track of your successes while -->
+<!--recognizing trends and improving your performance over time.</p>-->
+
+<% include ./partials/footer %>

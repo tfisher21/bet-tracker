@@ -16,7 +16,8 @@ performances.
 * [ejs](https://www.npmjs.com/package/ejs)
 * [nodemon](https://www.npmjs.com/package/nodemon)
 * [semantic-ui](https://www.npmjs.com/package/semantic-ui)
-* [gulp](https://www.npmjs.com/package/gulp) -- to allow Semantic-UI integration
+* [mongoose](https://www.npmjs.com/package/mongoose)
+* [body-parser](https://www.npmjs.com/package/body-parser)
 
 #### Other Assets:
 * [Semantic-UI](https://semantic-ui.com), 

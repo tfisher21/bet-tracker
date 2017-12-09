@@ -1,3 +1,10 @@
+/* General Styles */
+.ui.button a {
+  color: #1B1C1D;
+}
+
+
+/* Menu Styles */
 #navbar {
   background-color: #1B1C1D;
   margin: 0px auto;
@@ -12,19 +19,22 @@
   border-color: rgba(255, 255, 255, .75);
 }
 
+
+/* Home Page Styles */
 #landing {
   min-height: 500px;
   background-color: #1B1C1D;
+  /*padding-top: 2em;*/
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
 }
 
 #splash-text {
-  padding-top: 10em;
+  padding-top: 8em;
 }
 
-h1.ui.header {
+#splash-text h1.ui.header {
   font-size: 4em;
   color: rgba(255, 255, 255, .75);
   margin-bottom: 0px;
@@ -36,6 +46,17 @@ h3.ui.header {
   
 }
 
-/*#signup-btn {*/
-/*  background-color: #778899;*/
-/*}*/
+
+/* Sign Up Page Styles*/
+.ui.inverted.form label {
+  color: rgba(255,255,255,.75);
+}
+
+.ui.inverted.segment {
+  color: rgba(255,255,255,1);
+}
+
+/*Footer Styles*/
+#fdivider.ui.divider {
+  margin-top: 2rem;
+}
