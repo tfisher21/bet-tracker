@@ -1,27 +1,41 @@
 #navbar {
-  background-color: #2A5298;
-  margin-bottom: 2em;
+  background-color: #1B1C1D;
+  margin: 0px auto;
+  border: none;
 }
 
-#navbar a {
-  color: white;
+#navbar .item {
+  color: rgba(255, 255, 255, .75);
+}
+
+#navbar .item:active {
+  border-color: rgba(255, 255, 255, .75);
 }
 
 #landing {
   min-height: 500px;
-  background: #C02425;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(left, #F0CB35, #C02425);
-  background: -moz-linear-gradient(left, #F0CB35, #C02425);
-  background: -o-linear-gradient(left, #F0CB35, #C02425);
-  background: linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #1B1C1D;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
 }
 
-/*#splash-text {*/
-/*  padding-top: 12em;*/
+#splash-text {
+  padding-top: 10em;
+}
+
+h1.ui.header {
+  font-size: 4em;
+  color: rgba(255, 255, 255, .75);
+  margin-bottom: 0px;
+}
+
+h3.ui.header {
+  color: rgba(255, 255, 255, .75);
+  margin: 14px 0px 28px 0px;
+  
+}
+
+/*#signup-btn {*/
+/*  background-color: #778899;*/
 /*}*/
-
-#signup-btn {
-  color: white;
-  background-color: #2A5298;
-  border: 0px solid #2A5298;
-}
