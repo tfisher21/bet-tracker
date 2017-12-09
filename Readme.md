@@ -15,9 +15,12 @@ performances.
 * [express](https://www.npmjs.com/package/express)
 * [ejs](https://www.npmjs.com/package/ejs)
 * [nodemon](https://www.npmjs.com/package/nodemon)
+* [semantic-ui](https://www.npmjs.com/package/semantic-ui)
+* [gulp](https://www.npmjs.com/package/gulp) -- to allow Semantic-UI integration
 
 #### Other Assets:
-* 
+* [Semantic-UI](https://semantic-ui.com), 
+  [CDN](https://cdnjs.com/libraries/semantic-ui)
 
 #### Tasks
 1. Profiles
