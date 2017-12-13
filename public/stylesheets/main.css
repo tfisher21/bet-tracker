@@ -1,6 +1,18 @@
 /* General Styles */
+.backpage.ui {
+  min-height: 500px;
+  background-color: rgba(27, 28, 29, 1);
+  /*padding-top: 2em;*/
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+  
+  /* Potential Idea */
+  /*background-image: url("https://images.unsplash.com/photo-1473976345543-9ffc928e648d?auto=format&fit=crop&w=1685&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");*/
+}
+
 .ui.button a {
-  color: #1B1C1D;
+  color: rgba(27, 28, 29, 1);
 }
 
 .ui.container {
@@ -10,7 +22,7 @@
 
 /* Menu Styles */
 #navbar {
-  background-color: #1B1C1D;
+  background-color: rgba(27, 28, 29, .95);
   margin: 0px auto;
   border: none;
 }
@@ -25,22 +37,11 @@
 #nav-header {
   color: rgba(127,0,0,1)!important;
   border-color: rgba(127, 0, 0, 1);
+  margin-bottom: 0px;
 }
 
 
 /* Home Page Styles */
-#landing {
-  min-height: 500px;
-  background-color: #1B1C1D;
-  /*padding-top: 2em;*/
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
-  
-  /* Potential Idea */
-  /*background-image: url("https://images.unsplash.com/photo-1473976345543-9ffc928e648d?auto=format&fit=crop&w=1685&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");*/
-}
-
 #splash-text {
   padding-top: 8em;
 }
@@ -56,6 +57,11 @@ h3.ui.header {
   color: rgba(255, 255, 255, .7);
   margin: 14px 0px 28px 0px;
   
+}
+
+/*Sign Up/Login Styles*/
+.auth {
+  border: none;
 }
 
 
