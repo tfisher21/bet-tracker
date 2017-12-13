@@ -24,6 +24,10 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+app.use(function(req, res, next){
+   res.locals.currentUser = req.user;
+   next();
+});
 
 ////////////////////
 // ROUTES - ROOT
@@ -59,8 +63,34 @@ app.post("/signup", function(req, res){
 });
 
 // SHOW - show user profile
+app.get("/users/:id", function(req, res){
+  User.findById(req.params.id, function(err, user){
+    if (err) {
+      console.log(err);
+    } else {
+      res.render("users/show", {user: user});
+    }
+  });
+});
 
 
+////////////////////
+// ROUTES - AUTH
+////////////////////
+app.get("/login", function(req, res){
+  res.render("login");
+});
+
+app.post("/login", passport.authenticate("local", {
+  successRedirect: "/",
+        failureRedirect: "/login"
+    }), function(req, res){
+});
+
+app.get("/logout", function(req, res) {
+   req.logout();
+   res.redirect("/");
+});
 
 ////////////////////
 

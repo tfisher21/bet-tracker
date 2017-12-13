@@ -3,6 +3,10 @@
   color: #1B1C1D;
 }
 
+.ui.container {
+  padding-top: 2em;
+}
+
 
 /* Menu Styles */
 #navbar {
@@ -11,8 +15,16 @@
   border: none;
 }
 
+#navbar .ui.container {
+  padding-top: inherit;
+}
 #navbar .item:active {
   border-color: rgba(255, 255, 255, .7);
+}
+
+#nav-header {
+  color: rgba(127,0,0,1)!important;
+  border-color: rgba(127, 0, 0, 1);
 }
 
 
@@ -24,6 +36,9 @@
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+  
+  /* Potential Idea */
+  /*background-image: url("https://images.unsplash.com/photo-1473976345543-9ffc928e648d?auto=format&fit=crop&w=1685&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");*/
 }
 
 #splash-text {
@@ -32,7 +47,8 @@
 
 #splash-text h1.ui.header {
   font-size: 4em;
-  color: rgba(255, 255, 255, .7);
+  /*color: rgba(255, 255, 255, .7);*/
+  color: rgba(127, 0, 0, 1);
   margin-bottom: 0px;
 }
 

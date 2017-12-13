@@ -5,19 +5,27 @@
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css" rel="stylesheet" type="text/css">
 
-    <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
   </header>
   
   <body>
     
     <div id="navbar" class="ui secondary pointing menu inverted">
       <div class="ui container">
-        <a class="large item active" href="/"><i class="trophy icon"></i>BetTracker</a>
-        <a class="item" href="/">Profile</a>
-        <a class="item" href="/">New Bet</a>
+        <a id="nav-header" class="large item active" href="/"><i class="trophy icon"></i>BetTracker</a>
+        
+        <% if (currentUser) { %>
+          <a class="item" href="/users/<%= currentUser.id %>">Profile</a>
+          <a class="item" href="/">New Bet</a>
+        <% } %>
+        
         <div class="right menu">
-          <a class="item" href="/signup">Sign Up</a>
-          <a class="item" href="/">Login</a>
+          <% if (!currentUser) { %>
+            <a class="item" href="/signup">Sign Up</a>
+            <a class="item" href="/login">Login</a>
+          <% } else if (currentUser) { %>
+            <a class="item" href="/logout">Logout</a>
+          <% } %>
         </div>
       </div>
     </div>
