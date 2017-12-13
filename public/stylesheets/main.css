@@ -11,12 +11,8 @@
   border: none;
 }
 
-#navbar .item {
-  color: rgba(255, 255, 255, .75);
-}
-
 #navbar .item:active {
-  border-color: rgba(255, 255, 255, .75);
+  border-color: rgba(255, 255, 255, .7);
 }
 
 
@@ -36,25 +32,16 @@
 
 #splash-text h1.ui.header {
   font-size: 4em;
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, .7);
   margin-bottom: 0px;
 }
 
 h3.ui.header {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, .7);
   margin: 14px 0px 28px 0px;
   
 }
 
-
-/* Sign Up Page Styles*/
-.ui.inverted.form label {
-  color: rgba(255,255,255,.75);
-}
-
-.ui.inverted.segment {
-  color: rgba(255,255,255,1);
-}
 
 /*Footer Styles*/
 #fdivider.ui.divider {

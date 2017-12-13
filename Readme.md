@@ -18,10 +18,17 @@ performances.
 * [semantic-ui](https://www.npmjs.com/package/semantic-ui)
 * [mongoose](https://www.npmjs.com/package/mongoose)
 * [body-parser](https://www.npmjs.com/package/body-parser)
+* [passport](https://www.npmjs.com/package/passport)
+* [passport-local](https://www.npmjs.com/package/passport-local)
+* [passport-local-mongoose](https://www.npmjs.com/package/passport-local-mongoose)
 
 #### Other Assets:
 * [Semantic-UI](https://semantic-ui.com), 
   [CDN](https://cdnjs.com/libraries/semantic-ui)
+
+#### Potential APIs:
+* [bovada npm](https://www.npmjs.com/package/bovada)
+* [The Odds API](https://the-odds-api.com)
 
 #### Tasks
 1. Profiles
