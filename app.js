@@ -41,12 +41,23 @@ app.get("/", function(req, res){
 // ROUTES - USERS
 ////////////////////
 
-// NEW - Show new user form 
+// INDEX - show all users
+app.get("/users", function(req, res) {
+  User.find({}, function(err, allUsers){
+    if (err) {
+      console.log(err);
+    } else {
+      res.render("users/index", {users: allUsers});
+    }
+  });
+});
+
+// NEW - show new user form 
 app.get("/signup", function(req, res){
   res.render("users/signup");
 });
 
-// CREATE - create user
+// CREATE - create user and add to database
 app.post("/signup", function(req, res){
   User.register(new User({username: req.body.username,
                           firstName: req.body.fname,

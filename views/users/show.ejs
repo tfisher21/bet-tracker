@@ -1,7 +1,11 @@
 <% include ../partials/header %>
 
-<div class="ui container">
-  <h1>Welcome <%= currentUser.firstName %></h1>
+<div class="ui text container">
+  <h1 class="ui header inverted">
+    <%= currentUser.firstName %> <%= currentUser.lastName %>
+    <div class="sub header">Profile</div>
+  </h1>
+  <h3 class="ui header inverted"><%= currentUser.username %></h3>
 </div>
 
 <% include ../partials/footer %>
