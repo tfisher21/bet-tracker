@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 var db = require("./db");
+var methodOverride = require("method-override");
 
 var bodyParser = require("body-parser");
 var passport = require("passport"),
@@ -15,6 +16,7 @@ var User = require("./models/user");
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(methodOverride('_method'));
 
 
 // CONFIGURATION - Passport
