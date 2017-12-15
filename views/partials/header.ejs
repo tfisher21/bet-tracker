@@ -14,19 +14,19 @@
       <div class="ui container">
         <a id="nav-header" class="large item active" href="/"><i class="trophy icon"></i>BetTracker</a>
         
-        <% if (currentUser) { %>
-          <a class="item" href="/users/<%= currentUser.id %>">Profile</a>
-          <a class="item" href="/">New Bet</a>
-        <% } %>
-        
-        <div class="right menu">
-          <% if (!currentUser) { %>
+        <% if (!currentUser) { %>
+          <div class="right menu">
             <a class="item" href="/signup">Sign Up</a>
             <a class="item" href="/login">Login</a>
-          <% } else if (currentUser) { %>
+          </div>
+        <% } else { %>
+          <a class="item" href="/users/<%= currentUser.id %>">Profile</a>
+          <a class="item" href="/">New Bet</a>
+          
+          <div class="right menu">
             <a class="item" href="/logout">Logout</a>
-          <% } %>
-        </div>
+          </div>
+        <% } %>
       </div>
     </div>
     

@@ -5,12 +5,14 @@
     <% users.forEach(function(user) { %>
       <div class="column">
         <div class="ui fluid card">
-          <div class="image">
-            <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/21687525_10209975469169841_3791548211101227436_n.jpg?oh=f84ca326e67aab0dfb340275173db59e&oe=5A8FC439">
-          </div>
+            <div class="image">
+              <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/21687525_10209975469169841_3791548211101227436_n.jpg?oh=f84ca326e67aab0dfb340275173db59e&oe=5A8FC439">
+            </div>
           <div class="content">
             <div class="header"><%= user.firstName %></div>
             <div class="meta"><%= user.lastName %></div>
+            
+            <div class="right aligned"><a href="/users/<%=user._id %>">View Profile</a></div>
           </div>
         </div>
       </div>
