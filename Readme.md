@@ -21,6 +21,8 @@ performances.
 * [passport](https://www.npmjs.com/package/passport)
 * [passport-local](https://www.npmjs.com/package/passport-local)
 * [passport-local-mongoose](https://www.npmjs.com/package/passport-local-mongoose)
+* [faker](https://www.npmjs.com/package/faker)
+* [method-override](https://www.npmjs.com/package/method-override)
 
 #### Other Assets:
 * [Semantic-UI](https://semantic-ui.com), 

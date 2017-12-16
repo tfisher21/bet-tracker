@@ -1,18 +1,41 @@
 <% include ../partials/header %>
 
-<div class="ui text container">
-  <div id="profile-header" class="ui small header inverted">Profile</div>
+<div class="ui container">
   
-  <h1 class="ui header inverted">
-    <%= user.firstName %> <%= user.lastName %>
-  </h1>
-  <h3 class="ui header inverted"><%= user.username %></h3>
-  
-  <a href="/users/<%= user._id %>/edit"><button class="ui positive button">Edit</button></a>
-  
-  <form id="profile-delete" class="ui form" action="/users/<%= user._id %>?_method=DELETE" method="POST">
-    <button class="ui negative button">Delete</button>
-  </form>
+  <div class="ui items">
+    <div class="item">
+      <div class="ui medium circular image">
+        <img src="<%= user.image %>">
+      </div>
+    
+      <div class="content">
+        <div class="ui grey inverted large header">
+          <%= user.firstName %> <%= user.lastName %>
+        </div>
+        
+        <div class="meta">
+          <span>
+            <div class="ui grey inverted small header">
+              <%= user.username %>
+            </div>
+          </span>
+        </div>
+        
+        <a href="/users/<%= user._id %>/edit"><button class="ui positive button">Edit</button></a>
+
+        <form id="profile-delete" class="ui form" action="/users/<%= user._id %>?_method=DELETE" method="POST">
+          <button class="ui negative button">Delete</button>
+        </form>
+        
+        <div class="description">
+          <div class="ui basic inverted segment">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis auctor nunc, in vestibulum tellus. Mauris tincidunt sagittis ante, dictum tempor metus elementum nec. Mauris eu molestie velit. Nunc felis lectus, porttitor tempus ornare non, venenatis nec felis. Etiam pulvinar, ipsum et vestibulum facilisis, erat mi tempus arcu, ac pharetra orci urna eget enim. Pellentesque tempus leo sed ex elementum tincidunt. Mauris venenatis eu tortor vel suscipit. Praesent sit amet molestie est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 </div>
 
 <% include ../partials/footer %>
