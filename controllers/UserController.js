@@ -54,7 +54,7 @@ router.get("/:id", function(req, res){
   });
 });
 
-// EDIT
+// EDIT - show user edit form
 router.get("/:id/edit", function(req, res){
   User.findById(req.params.id, function(err, user){
     if (err) {
@@ -65,8 +65,7 @@ router.get("/:id/edit", function(req, res){
   });
 });
 
-
-// UPDATE
+// UPDATE - update user
 router.put("/:id", function(req, res){
   var newData = {firstName: req.body.fname, lastName: req.body.lname, username: req.body.username};
   User.findByIdAndUpdate(req.params.id, {$set: newData}, function(err, user){
@@ -79,8 +78,16 @@ router.put("/:id", function(req, res){
   });
 });
 
-
-//DESTROY
+//DESTROY - delete user
+router.delete("/:id", function(req, res){
+  User.findByIdAndRemove(req.params.id, function(err){
+    if (err) {
+      console.log(err);
+    } else {
+      res.redirect("/users");
+    }
+  });
+});
 
 
 ///////////////

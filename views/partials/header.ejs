@@ -16,14 +16,14 @@
         
         <% if (!currentUser) { %>
           <div class="right menu">
-            <a class="item" href="/users/new">Sign Up</a>
             <a class="item" href="/login">Login</a>
           </div>
         <% } else { %>
+          <a class="item" href="/users">All Users</a>
           <a class="item" href="/users/<%= currentUser.id %>">Profile</a>
-          <a class="item" href="/">New Bet</a>
           
           <div class="right menu">
+            <a class="item" href="/">New Bet</a>
             <a class="item" href="/logout">Logout</a>
           </div>
         <% } %>

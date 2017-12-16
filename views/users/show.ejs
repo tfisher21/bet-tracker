@@ -1,11 +1,18 @@
 <% include ../partials/header %>
 
 <div class="ui text container">
+  <div id="profile-header" class="ui small header inverted">Profile</div>
+  
   <h1 class="ui header inverted">
     <%= user.firstName %> <%= user.lastName %>
-    <div class="sub header">Profile</div>
   </h1>
   <h3 class="ui header inverted"><%= user.username %></h3>
+  
+  <a href="/users/<%= user._id %>/edit"><button class="ui positive button">Edit</button></a>
+  
+  <form id="profile-delete" class="ui form" action="/users/<%= user._id %>?_method=DELETE" method="POST">
+    <button class="ui negative button">Delete</button>
+  </form>
 </div>
 
 <% include ../partials/footer %>

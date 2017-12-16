@@ -69,3 +69,12 @@ h3.ui.header {
 #fdivider.ui.divider {
   margin-top: 2rem;
 }
+
+/*Show Page*/
+#profile-header {
+  color: rgba(127,0,0,1);
+}
+
+#profile-delete {
+  display: inline;
+}
