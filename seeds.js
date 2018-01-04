@@ -3,6 +3,15 @@ var mongoose  = require("mongoose"),
 
 var User = require("./models/user");
 
+// Potential Refactoring
+// function SampleUser() {
+//     this.firstName  = faker.name.firstName();
+//     this.lastName   = faker.name.lastName();
+//     this.username   = faker.internet.exampleEmail();
+//     this.image      = faker.image.avatar();
+//     this.password   = "password";
+// }
+
 var data = [
   {
     firstName:  faker.name.firstName(),
